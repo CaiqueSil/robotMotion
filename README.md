@@ -1,5 +1,18 @@
 # Robotmotion
 
+**Projeto acadêmico em equipe — C++, ESP8266 e integração entre software e hardware.**
+
+O projeto reúne controle de estados, comunicação I2C, persistência em EEPROM e uma interface HTTP embarcada. Foi desenvolvido por alunos de Engenharia de Software da UNEB Campus II.
+
+### Por onde começar
+
+- Firmware de referência deste guia: [`Programação do Robô/eyes4.ino`](<Programação do Robô/eyes4.ino>).
+- Montagem: [manual em PDF](<Manual de montagem do Robomotion.pdf>).
+- Peças mecânicas: [arquivos de impressão](<Arquivos de impressão/>).
+- As demais versões `.ino` são alternativas históricas; não compile todos os arquivos juntos. Copie a versão escolhida para uma pasta de sketch com o mesmo nome (por exemplo, `eyes4/eyes4.ino`).
+
+**Estado:** protótipo educacional. A reprodução depende da montagem, das bibliotecas e da placa utilizadas. Para demonstrá-lo, verifique display, botões, persistência após reinício e resposta de `/stats` no hardware.
+
 Clone inspirado no Tamagotchi (Bandai) – um bichinho virtual autônomo com olhos animados em OLED, motor de emoções, mini‑jogo e controle via interface web + voz.
 
 > "Robomotion" é um pet eletrônico feito para experimentar animação, estados emocionais e interação humano–dispositivo usando um ESP8266.
@@ -56,7 +69,7 @@ Instale via Gerenciador de Bibliotecas da Arduino IDE:
 2. Adicione placa ESP8266: Ferramentas > Placa > Gerenciador de Placas > "esp8266"
 3. Selecione a placa correspondente (ex: NodeMCU 1.0)
 4. Instale bibliotecas listadas acima
-5. Abra `eyes4.ino`
+5. Abra `eyes4/eyes4.ino`, copiado de `Programação do Robô/eyes4.ino`
 6. Ajuste:
 ```cpp
 const char* ssid = "SEU_SSID";
